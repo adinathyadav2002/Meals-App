@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:meal_app/modules/meals/meals_screen.dart';
-import 'package:meal_app/data/dummy_data.dart';
+import 'package:meal_app/modules/category/categories_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,11 +22,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.latoTextTheme(),
       ),
 
-      home: MealsScreen(
-        title: 'Spaghetti with Tomato Sauce',
-        meals: dummyMeals,
-      ),
-      // home: CategoryScreen(),
+      home: CategoryScreen(),
     );
   }
 }
